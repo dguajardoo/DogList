@@ -14,6 +14,7 @@ class DogViewHolder(val binding: ItemDogBinding) : RecyclerView.ViewHolder(bindi
 
         Picasso.get().load(image).into(binding.ivDog)
         binding.tvURL.text = image
+        binding.tvURL.visibility = View.GONE
         //Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(binding.ivDog)
     }
 }

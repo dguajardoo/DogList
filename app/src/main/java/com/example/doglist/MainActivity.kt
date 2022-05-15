@@ -57,8 +57,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                     val images = puppies?.images?: emptyList()
                     dogImages.clear()
                     dogImages.addAll(images)
-                    //initRecyclerView()
-
                     adapter.notifyDataSetChanged()
                 } else {
                     showError()
